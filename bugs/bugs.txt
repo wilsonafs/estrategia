@@ -1,0 +1,19 @@
+Bug 1 - [Filtrar um curso específico de uma região] Cursor do mouse sumindo
+
+Quando o usuário acessa uma região ex. São Paulo e scrolla a página até os cursos disponíveis em São Paulo, no header da sessão ao lado direito temos o ícone da lupa, quando eu passo o mouse por cima do ícone, o mouse desaparece
+
+Precisamos exibir o mouse por cima do ícone para melhorar a experiência de navegação do usuário.
+
+URL: https://www.estrategiaconcursos.com.br/cursos/regiao/?estado=SP
+OS: Linux, Ubuntu 18.04.4
+Browser: Chrome  70.0.3538.77
+
+Melhoria 1 - [Filtrar um curso específico de uma região] Comportamento do ícone da lupa
+
+A melhoria é relacionada com o bug acima, hoje não temos nenhuma borda na área do input, e isso passa a impressão de que o usuário precisa clicar na lupa para realizar a sua busca. Podemos deixar a lupa clicável, assim quando o usuário clicar na lupa, o foco do cursor ficará dentro do campo do search aguardando o texto 
+
+Melhoria 2 - [Filtrar um curso específico de uma região] Resultado do filtro para uma busca sem resultados 
+
+Hoje quando digitamos um curso ou qualquer palavra chave que não existe, a lista de cursos desaparece e mais nada acontece, dá uma impressão de bug, pois o usuário não tem um feedback claro da busca dele, o ideal seria adicionarmos uma mensagem ex. "Esse curso {{curso}} não foi encotrado na sua região" ou alguma coisa do tipo que retorne esse feedback claro para o usuário. 
+
+- Os três itens estão reproduzidos no arquivo evidencia.gif 
